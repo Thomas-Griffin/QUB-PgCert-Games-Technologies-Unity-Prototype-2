@@ -2,9 +2,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // Player movement variables
     public float horizontalInput;
     public float playerSpeed = 10.0f;
     public int playerMovementBoundary = 10;
+
+    // Projectile variables
+    public GameObject projectilePrefab;
 
     // Update is called once per frame
     void Update()
