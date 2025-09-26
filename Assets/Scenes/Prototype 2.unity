@@ -275,6 +275,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9468feb744d8a408baacd00075edde30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
+  animalPrefabs:
+  - {fileID: 1904760186074498285, guid: 609eb45dafbd64037bfc815968e7d457, type: 3}
+  - {fileID: 3942417653739362587, guid: c29f7a1fdf41a4ca99d3a4bed45a98af, type: 3}
+  - {fileID: 4726299966800754906, guid: 02c26dbbe1ed349cfa2387882dd909f3, type: 3}
 --- !u!4 &366339912
 Transform:
   m_ObjectHideFlags: 0
