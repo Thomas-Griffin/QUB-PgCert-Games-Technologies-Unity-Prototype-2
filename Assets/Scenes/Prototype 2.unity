@@ -656,7 +656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f136acad9bbd54c7c9f1eeebfb24e1c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  movementSpeed: 3
+  movementSpeed: 1
 --- !u!1 &989483528 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 140746, guid: 02eca77e7e6a2ec41ba4c68f20e26098, type: 3}
@@ -674,7 +674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f136acad9bbd54c7c9f1eeebfb24e1c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  movementSpeed: 3
+  movementSpeed: 5
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
