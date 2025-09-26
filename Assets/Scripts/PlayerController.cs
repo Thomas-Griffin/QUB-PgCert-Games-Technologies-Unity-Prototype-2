@@ -3,22 +3,27 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float horizontalInput;
-    public float speed = 10.0f;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-    }
+    public float playerSpeed = 10.0f;
+    public int playerMovementBoundary = 10;
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x < -10) // boundary check
+        if (transform.position.x < -10) // left boundary check
         {
-            transform.position = new Vector3(-10, transform.position.y, transform.position.z);
+            // snap player back to the boundary
+            transform.position = new Vector3(-playerMovementBoundary, transform.position.y, transform.position.z);
+        }
+        else if (transform.position.x > 10) // right boundary check
+        {
+            // snap player back to the boundary
+            transform.position = new Vector3(playerMovementBoundary, transform.position.y, transform.position.z);
         }
 
+        // Get the horizontal input
         horizontalInput = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * (horizontalInput * Time.deltaTime * speed));
+
+        // Move the player left and right
+        transform.Translate(Vector3.right * (horizontalInput * Time.deltaTime * playerSpeed));
     }
 }
