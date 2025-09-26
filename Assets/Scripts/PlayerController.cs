@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
     // Player movement variables
     public float horizontalInput;
     public float playerSpeed = 10.0f;
-    public int playerMovementBoundary = 10;
+    public int playerMovementBoundary = 17;
 
     // Projectile variables
     public GameObject projectilePrefab;
@@ -13,12 +13,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x < -10) // left boundary check
+        if (transform.position.x < -playerMovementBoundary) // left boundary check
         {
             // snap player back to the boundary
             transform.position = new Vector3(-playerMovementBoundary, transform.position.y, transform.position.z);
         }
-        else if (transform.position.x > 10) // right boundary check
+        else if (transform.position.x > playerMovementBoundary) // right boundary check
         {
             // snap player back to the boundary
             transform.position = new Vector3(playerMovementBoundary, transform.position.y, transform.position.z);

@@ -533,7 +533,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: -1
   m_CullingMask:
@@ -722,7 +722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   horizontalInput: 0
   playerSpeed: 10
-  playerMovementBoundary: 10
+  playerMovementBoundary: 17
   projectilePrefab: {fileID: 6928854217720203137, guid: 194f8cc2bc9ec4eba87a6f0e97ee266f, type: 3}
 --- !u!1 &1590138454
 GameObject:
