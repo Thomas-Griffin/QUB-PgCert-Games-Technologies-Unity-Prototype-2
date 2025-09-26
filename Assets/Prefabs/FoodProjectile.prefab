@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 605901371006321813}
   - component: {fileID: 4233630395950406395}
   - component: {fileID: 6345317167899171424}
+  - component: {fileID: 5773791486857722332}
   m_Layer: 0
   m_Name: FoodProjectile
   m_TagString: Untagged
@@ -103,3 +104,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   movementSpeed: 40
+--- !u!114 &5773791486857722332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6928854217720203137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d780fdfd98647318f653856b278297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
