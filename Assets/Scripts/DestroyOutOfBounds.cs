@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DestroyOutOfBounds : MonoBehaviour
 {
+    // level bounds for objects
     private const float TopBound = 30;
     private const float LowerBound = -10;
 
@@ -10,8 +11,17 @@ public class DestroyOutOfBounds : MonoBehaviour
     void Update()
     {
         // Destroy the object if it goes out of bounds
-        if (transform.position.z is > TopBound or < LowerBound)
+        if (transform.position.z > TopBound)
         {
+            // the object is destroyed
+            Destroy(gameObject);
+        }
+        // if the object goes below the lower bound
+        else if (transform.position.z < LowerBound)
+        {
+            // log "Game Over!"
+            Debug.Log("Game Over!");
+
             // the object is destroyed
             Destroy(gameObject);
         }
